@@ -29,7 +29,7 @@ const FAQList = ({ data }: FAQListProps) => {
               className="cursor-pointer"
               width={25}
               height={25}
-              src={`src/assets/images/icon-${
+              src={`../../src/assets/images/icon-${
                 openIndexes.includes(index) ? 'minus' : 'plus'
               }.svg`}
               alt={openIndexes.includes(index) ? 'Minus Icon' : 'Plus Icon'}
