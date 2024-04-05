@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'WorkSansRegular';
+  src: url('./assets/fonts/WorkSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'WorkSansBold';
+  src: url('./assets/fonts/WorkSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'WorkSansSemiBold';
+  src: url('./assets/fonts/WorkSans-SemiBold.ttf');
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+}
+
+h1 {
+  font-family: 'WorkSansBold';
+}
+
+h3:hover {
+  transition: all 0.3s ease-in-out;
+}
+
+p {
+  animation: pop-in 0.5s ease-in;
+}
+
+.faq-container {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.faq:not(:last-child) {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-image {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 768px) {
+  .header-image {
+    width: 30px;
+    height: 30px;
+  }
+}
